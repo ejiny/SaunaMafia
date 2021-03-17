@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#wrapper{
+    margin: 0 auto;
+}
+
+#top{
+    margin-top: 0.3%;
+    height: 50vw;
+    max-width: 100%;
+    background-image:url(../img/woman-936549_1920.jpg);
+    background-size: cover;
+    filter:drop-shadow(2px 4px 6px #000);
+  }
+#top{
+    animation: fadeIn 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn 3s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#toplogo{
+    padding: 20% 0 20% 10%;
+    width: 80vw;
+
+}
+
+#head{
+    width: 100%;
+  
+    height: 15vw;
+    background-color: black;
+    
+}
+
+
+#headlogo{
+    max-width: 25vw;
+    padding-top: 3%;
+    padding-left: 3%;
+    
+}
+nav{
+  
+    max-width: 100%;
+}
+
+li{
+    margin-left: 3%;
+    padding: 0;
+    font-size: 0.7rem;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow:0  0.1rem  transparent;
+    /*border-left:1px solid gray ;
+    border-right: 1px solid gray;*/
+    
+
+}
+li:hover{
+    box-shadow:0  0.1rem   honeydew;
+   
+    
+
+}
+ul{
+    padding: 0;
+    text-align: center;
+}
+
+.topsimg{
+    background-image: url(../img/paka.png);
+
+}
+.shirtimg{
+    background-image: url(../img/tshits.png);
+}
+.itemimg{
+    background-image: url(../img/taoru.png);
+}
+.hatimg{
+    background-image: url(../img/hatimg.png);
+
+}
+.flex{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.topsimg,.shirtimg,.itemimg,.hatimg{
+    background-position: center;	background-repeat: no-repeat;	background-size: 100% auto;
+    height: 30vw;
+    
+    position: relative;
+    display:flex;
+    width: 30vw;
+    
+}
+.hatimg{
+    background-size: 50%;
+}
+.catetitle{
+    font-family: Quicksand;
+    color: #333;
+    text-shadow: 0 20px 10px rgba(0, 0, 0, 1);
+    font-size: 300%;
+   
+}
+.shoptitle{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-family: Orbitron;
+    font-weight: lighter;
+    text-shadow:0 10px 10px rgb(82, 82, 78);
+    font-size: 200%;
+    
+    
+}
+
+
+
+
+
+
+#foot{
+    margin-top: 5rem;
+    max-width: 100%;
+    height: 13rem;
+    background-color: rgb(8, 8, 8);
+    box-shadow: 0 -0.1rem 1rem #0a0a0a;
+    text-align: center;
+    position: relative;
+   
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+#cr{
+    font-size: 1.2vw;
+    color: rgb(85, 79, 79);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+a:link { color: #f7f7fc; }/*未訪問のリンク*/
+a:visited { color: #f1f1f7; }/*訪問済みのリンク*/
+a:hover { color: #acabec; }/*ポイント時のリンク*/
+a:active { color: #f8f5f2; } /*選択中のリンク*/
+
+.inner{
+    padding-top: 5vw;
+    
+}
+#about h2{
+    font-size: 67%;
+    width: 80%;
+    margin: 0 auto;
+}
+.newstitle,.newstext,.newsdate{
+    display: inline-block;
+    font-size: 70%;
+
+}
+.newsdate{
+    margin-left: 20%;
+}
+
+#aboutimg{
+    width: 70%;
+    margin: 5vw 13vw;
+    border-radius: 10%;
+    filter:drop-shadow(2px 4px 6px #000);
+}
+
+
+
+
+
+
+.follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 42px; /* Button height */
+    line-height: 42px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 42px; /* Button width */
+  }
+  .follow-me li a[href*="amazon.co.jp"]::before,
+  .follow-me li a[href*="amazon.com"]::before         { border-color: #ff9900; color: #ff9900; content: "\f270"; }
+ 
+  .follow-me li a[href*="facebook.com"]::before       { border-color: #3b5998; color: #3b5998; content: "\f09a"; }
+  
+  
+  .follow-me li a[href*="plus.google.com"]::before    { border-color: #dc4e41; color: #dc4e41; content: "\f0d5"; }
+  
+  .follow-me li a[href*="instagram.com"]::before      { border-color: #125688; color: #125688; content: "\f16d"; }
+  
+  .follow-me li a[href*="twitter.com"]::before        { border-color: #55acee; color: #55acee; content: "\f099"; }
+  
+  .follow-me li a[href*="youtube.com"]::before        { border-color: #cd201f; color: #cd201f; content: "\f16a"; }
+  
+  .follow-me li a[href$="/subscribe"]::before         { border-color: #363636; color: #363636; content: "\f000"; font-family: blogicon; }
+  .follow-me li a:hover::before {
+    color: #fff;
+  }
+  .follow-me li a[href*="amazon.co.jp"]:hover::before,
+  .follow-me li a[href*="amazon.com"]:hover::before         { background-color: #ff9900; }
+
+  .follow-me li a[href*="facebook.com"]:hover::before       { background-color: #3b5998; }
+
+  .follow-me li a[href*="plus.google.com"]:hover::before    { background-color: #dc4e41; }
+ 
+  .follow-me li a[href*="instagram.com"]:hover::before      { background-color: #125688; }
+
+  .follow-me li a[href*="twitter.com"]:hover::before        { background-color: #55acee; }
+
+
+
+  .follow-me li a[href*="youtube.com"]:hover::before        { background-color: #cd201f; }
+
+
+  .innertop{
+      height: 23vw;
+      display: none;
+  }
+
+  #goods h3{
+      color: black;
+        position: relative;
+        padding: 0.25em 1em;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+        width: 50%;
+        margin: 0 auto;
+}
+
+
+
+#goods h3:before, #goods h3:after {
+        content: '';
+        position: absolute;
+        top: -7px;
+        width: 2px;
+        height: -webkit-calc(100% + 14px);
+        height: calc(100% + 14px);
+        background-color: black;
+      }
+      #goods h3:before {
+        left: 7px;
+      }
+      #goods h3:after {
+        right: 7px;
+      }
+  
+.font,#news h2,#news h3,#news h4,#news h5,
+#plan h2,#plan h3,#plan h4,#plan h5,
+#rental h2,#rental h3,#rental h4,#rental h5{
+    font-family: 'Shippori Mincho B1', serif;
+}
+#contact a{
+    color: black;
+    
+}
+.shadow{
+    position: relative;
+    border: 0.1vw  solid black;
+    transition-duration   : 1s;
+    box-shadow: 0 0 30px #0000 inset;
+	
+}
+.shadow:hover{
+    box-shadow: 0 0 30px black inset;
+}
+#contact{
+    margin-bottom: 20vw;
+}
+#news a{
+    color: cornflowerblue;
+}
+#about h2{
+    font-size: 100%;
+}
+#news h2,#news h3,#news h4,#news h5{
+    font-size: 100%;
+    line-height: 50%;
+}
+.newstitle{
+    font-weight: bold;
+}
+.newsdate{
+    font-style: italic;
+}

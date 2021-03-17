@@ -1,0 +1,96 @@
+@media screen and (max-width: 767px) {
+
+#head nav{
+    display: none;
+}
+
+#gloval-nav,#gloval-nav ul,#gloval-nav li{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+#gloval-nav ul{
+    width: 40vw;
+}
+#gloval-nav li{
+    font-size: 130%;
+    line-height: 200%;
+}
+#gloval-nav .abo{
+    font-size: 38%;
+}
+#nav-toggle{
+    top: 6vw;
+}
+#head{
+    position: fixed;
+    top: 0;
+    width: 96vw;
+    z-index: 2;
+    height: 25vw;
+}
+#top{
+    z-index: 1;
+}
+
+form{
+    width: 70vw;
+    margin: 0 auto;
+}
+#foot{
+    height: 20vh;
+}
+#cr{
+    
+    font-size: 65%;
+}
+#nav-toggle{
+    top:1vh;
+    width: 75px;
+    height: 75px;
+}
+#headlogo{
+    max-width: 60vw;
+}
+.innertop{
+    display: block;
+}
+.inner{
+    padding-top: 30vw;
+    
+}
+#news h2,#news h3,#news h4{
+    font-size: 3vw;
+}
+.newsdate{
+    margin-right: 20vw;
+    display: block;
+}
+.newstitle{
+    display: block;
+}
+.newstext{
+    display: block;
+}
+#about h2{
+    font-size: 3.3vw;
+    margin-bottom: 5vw;
+}
+#goods a{
+    width: 100px;
+    height: 100px;
+    
+}
+.topsimg,.shirtimg,.itemimg,.hatimg{
+    width: 70vw;
+    height: 70vw;
+    margin-left: 13vw;
+}
+.shoptitle{
+    font-size: 2em;
+    border-bottom: blanchedalmond solid 1px;
+}
+.flex{
+    display: inline-block;
+}
+}
