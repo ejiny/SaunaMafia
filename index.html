@@ -11,6 +11,7 @@
         <meta property="og:image" content="http://saunamafia.club/img/bana3.png" />
         <meta name="keywords" content="北海道,札幌,サウナ,レンタル,テント,テントサウナ,サウナハット,サウナマット,サウナブランド,Tシャツ,ロンT,パーカー,ファッション,アパレル,サウナグッズ">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="./css/loading.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/form.css">
         <link rel="stylesheet" href="./css/fuwa.css">
@@ -22,10 +23,17 @@
         <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/slide.css">
         <link rel="stylesheet" href="./css/resp.css">
+        <link rel="stylesheet" href="./css/rental.css">
+        <link rel="stylesheet" href="./css/plan.css">
+        <link rel="stylesheet" href="./css/txtanime.css">
+        
 
     </head>
     <body id="body">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <div class="loading">
+            <div class="animation"><img class="loadimg" src="./img/tmlogo.png" alt="ロード画面"></div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>    
         <div id="wrapper">
             <header>
                 <div class="custom-header">
@@ -39,22 +47,22 @@
                     <div id="gloval-nav">
                         <nav>
                             <ul>
-                            <li><a href="#goods">shop</a></li>
-                            <li><a href="#rental">rental</a></li>
-                            <li><a href="#plan">pran</a></li>
-                            <li><a href="#news">news</a></li>
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#contact">contact</a></li>
+                            <li><a href="#rental">RENTAL</a></li>
+                            <li><a href="#goods">SHOP</a></li>
+                            <li><a href="#plan">PLAN</a></li>
+                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                             </ul>
                         </nav>
                     </div>
                 <div id="head">
                     <div></div>
-                    <a href="#body"><img src="./img/logowh.png" id="headlogo"></a>
+                    <a href="https://saunamafia.club/"><img src="./img/logowh.png" id="headlogo" alt="ヘッダーロゴ"></a>
                     <nav>
                         <ul>
+                            <li><a href="#rental">サウナレンタル</a></li>
                             <li><a href="#goods" class="abo">ショップ</a></li>
-                                <li><a href="#rental">サウナレンタル</a></li>
                                 <li><a href="#plan">料金プラン</a></li>
                                 <li><a href="#news">ニュース</a></li>
                                 <li><a href="#about">サウナマフィアについて</a></li>
@@ -73,16 +81,16 @@
                     <div class="swiper-wrapper">
                         <!-- 各スライド -->
                         <div class="swiper-slide">
-                            <img class="banapc" src="./img/bana1.png">
-                            <img class="banamb" src="./img/banares1.png">
+                            <img class="banapc" src="./img/bana1.png" alt="バナー画像">
+                            <img class="banamb" src="./img/banares1.png"　alt="バナー画像">
                         </div>
                         <div class="swiper-slide">
-                            <img class="banapc" src="./img/bana2.png">
-                            <img class="banamb" src="./img/banares2.png">
+                            <img class="banapc" src="./img/NewOpenPricepc .png"　alt="バナー画像">
+                            <img class="banamb" src="./img/NewOpenPricemb.png"　alt="バナー画像">
                         </div>
                         <div class="swiper-slide">
-                            <img class="banapc" src="./img/bana3.png">
-                            <img class="banamb" src="./img/banares3.png">
+                            <img class="banapc" src="./img/bana3.png"　alt="バナー画像">
+                            <img class="banamb" src="./img/banares3.png"　alt="バナー画像">
                         </div>    
                     </div>
                     <div class="swiper-pagination"></div>
@@ -90,49 +98,80 @@
                    
                 </div>
                 </div>
-                
+                <div class="scroll-fade">
+                    <h1 class="catetitle">Rental</h1>
+                    <section id="rental" class="inner" class="scroll-fade" class="font">
+                        
+                        <div class="rentalbox">
+                        <div class="imgbox"><img  class="rentalimg" src="./img/rentaltop2.png">
+                        <h2>
+                            <svg viewbox="0 0 100 20">
+                                <defs>
+                                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="5%" stop-color="#326384"/>
+                                    <stop offset="95%" stop-color="#123752"/>
+                                </linearGradient>
+                                <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                    <animateTransform
+                                        attributeName="transform"
+                                        begin="0s"
+                                        dur="1.5s"
+                                        type="translate"
+                                        from="0,0"
+                                        to="40,0"
+                                        repeatCount="indefinite"/>
+                                    </path>
+                                </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="0.8">サウナをどこにでも.</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#gradient)" fill-opacity="0.3">サウナをどこにでも.</text>
+                            </svg>
+                            <p class="rentaltext">
+                            当店のサウナテントで本格的フィンランドサウナ体験を<br>
+                            キャンプやBBQシーン、海にでも、お庭にでも<br>
+                            あなたにとって最高サウナをお好きな場所でご演出できます。<br>
+                            サウナテントを購入すると高額で中々手が出しづらい、<br>
+                            保管場所がない、手入れが面倒、薪等の消耗品の入手が困難<br>
+                            そんな方にリーズナブルで気軽に借りれる<br>
+                            レンタルサービスを行っております。<br>
+                           
+
+
+                        </h2>
+                        </div>
+                        </div>
+                       
+                        <a href="./rental.html" class="btn btn-c btn--green btn--cubic blo fluffy">サウナテントをレンタルする→</a>
+                       
+                        <br>
+                        <br>
+    
+    
+                    </section>
+                    </div>
                 
                 <div class="scroll-fade">
+                    <h1 class="catetitle" >Shop</h1>
                 <section id="goods" class="inner"class="scroll-fade">
-                    <h1 class="catetitle">Shop</h1>
-                    <div class="flex">
-                        <a href="https://saunamafia.official.ec/items/41377049"><div class="topsimg" class="flex"><h2 class="shoptitle">TOPS</h2></div></a><br>
-                        <a href="https://saunamafia.official.ec/items/41376739"><div class="shirtimg" class="flex"><h2 class="shoptitle">SHIRT</h2></div></a><br>
+                    <div class="autoplay-slider">
+                        <div class="slide"><a href="https://saunamafia.official.ec/items/41465823"><div class="topsimg" class="flex"><h2 class="shoptitle">TOPS</h2></div></a></div>
+                        <div class="slide"><a href="https://saunamafia.official.ec/items/41465709"><div class="shirtimg" class="flex"><h2 class="shoptitle">SHIRT</h2></div></a></div>
+                        <div class="slide"><a href="https://saunamafia.official.ec/items/41376859"><div class="itemimg" class="flex"><h2 class="shoptitle">ITEM</h2></div></a></div>
+                        <div class="slide"><a href="https://saunamafia.official.ec/items/40906614"><div class="hatimg" class="flex"><h2 class="shoptitle">Hat</h2></div></a></div>
                     </div>
-                    <div class="flex">
-                        <a href="https://saunamafia.official.ec/items/41376859"><div class="itemimg" class="flex"><h2 class="shoptitle">ITEM</h2></div></a><br>
-                        <a href="https://saunamafia.official.ec/items/40906614"><div class="hatimg" class="flex"><h2 class="shoptitle">Hat</h2></div></a>
-                    </div>
+                    
                         <a href="https://saunamafia.official.ec/"><h3 class="shadow">view more</h3></a>
                     <br>
                     <br>
 
                 </section>
                 </div>
+                
                 <div class="scroll-fade">
-                <section id="rental" class="inner" class="scroll-fade" class="font">
-                    <h1 class="catetitle">Rental</h1>
-                    <h2>coming soon</h2>
-                    <!--<h2>サウナテントの説明タイトル</h2>
-                    <h3>サウナテントの説明内容</h3>
-                    <br>
-                    <h2>テント紹介１</h2>
-                    <h3>テント説明</h3>
-                    <h4>テントスペック</h4>
-                    <h5>度数組立て時間など</h5>
-                    <h2>テント紹介２</h2>
-                    <h3>テント説明</h3>
-                    <h4>テントスペック</h4>
-                    <h5>度数組立て時間など</h5> -->
-                    <br>
-                    <br>
-
-
-                </section>
-                </div>
-                <div class="scroll-fade">
-                <section id="plan" class="inner" class="scroll-fade">
                     <h1 class="catetitle">Plan</h1>
+                <section id="plan" class="inner" class="scroll-fade">
+                   
                     <h2>coming soon</h2>
                    <!-- <h2>プラン名１</h2>
                     <h3>プラン１説明</h3>
@@ -141,14 +180,15 @@
                     <h2>プラン名2</h2>
                     <h3>プラン2説明</h3>
                     <h4>プラン料金等</h4>-->
-                  
+                    <a href="./plan.html"><h3 class="shadow">プラン/システム詳細</h3></a>
                     <br>
                     <br>
                 </section>
                 </div>
                 <div class="scroll-fade">
+                    <h1 class="catetitle">News</h1>
                     <section id="news" class="inner" class="scroll-fade">
-                        <h1 class="catetitle">News</h1>
+                        
                         <h2 class="newsdate">2021.02.18 &nbsp;&nbsp;</h2>
                         <h3 class="newstitle">-公式ホームページ作成-&nbsp;&nbsp;</h3>
                         <h4 class="newstext">SaunaMafia™　公式HP　仮オープン</h4><br>
@@ -161,26 +201,36 @@
                     </section>
                     </div>
                 <div class="scroll-fade">
+                    <h1 class="catetitle">about</h1>
                     <section id="about" class="inner">
-                        <h1 class="catetitle">about</h1>
-                        <h2 class="font">Sauna Mafia （サウナマフィア）<br>
-                            Sauna好きの人（サウナー）は、サウナを愛し優しい印象の方が多いと思います。<br>
-                            そこに私達はMafiaを社会的にマイナスなイメージではなく、家族愛、仲間意識と捉えて、<br>
-                            気軽に北海道の大自然溢れるロケーションなどでテントサウナを仲間や友人、家族と<br>
-                            一緒に楽しんでほしいということから、「SaunaMafia」と命名しました。<br>
+                        
+                        <h2 class="font"><strong>SaunaMafia</strong>（サウナマフィア）</h2>
+                            <h3>Sauna好きの人（サウナー）は、<br class="brmb">
+                            サウナを愛し優しい印象の方が多いと思います。<br class="brmb"><br class="brpc">
+                            そこに私達はMafiaを社会的に<br class="brmb">
+                            マイナスなイメージではなく<br class="brmb"><br class="brpc">
+                            <strong>「家族愛」・「仲間意識」</strong>と捉えて<br class="brmb"><br class="brpc">
+                            気軽に北海道の大自然溢れるロケーションなどで<br class="brmb">
+                            テントサウナを仲間や友人、家族と<br class="brmb"><br class="brpc">
+                            一緒に楽しんでほしいということから、<br class="brmb">
+                            「SaunaMafia」と命名しました。<br class="brmb"><br class="brpc">
                             <br>
-                            アウトドアでサウナを楽しめるサウナテントのレンタルを試験的に運用しております。<br>
-                            お手頃価格な価格で選びやすい運営を目指すので、どうぞご贔屓ください。<br>
-                        </h2>
-                        <img src="./img/aboutimg.jpg" id="aboutimg"><br>
+
+                            アウトドアでサウナを楽しめる<br class="brmb">
+                            サウナテントのレンタルを試験的に運用しております。<br class="brmb"><br class="brpc">
+                            お手頃価格な価格で選びやすい運営を目指すので<br class="brmb">
+                            どうぞご贔屓ください。<br class="brmb"><br class="brpc">
+                        </h3>
+                        <img src="./img/aboutimg.jpg" id="aboutimg" alt="aboutの画像"><br>
                         <!--<a href="https://jp.freepik.com/photos/woman">Gpointstudio - jp.freepik.com によって作成された写真</a>-->
                         <br>
                  
                     </section>
                     </div>
                 <div class="scroll-fade">
-                <section id="contact" class="inner" class="scroll-fade">
                     <h1 class="catetitle">contact</h1>
+                <section id="contact" class="inner" class="scroll-fade">
+                    
                     <form>      
                     <h2 class="font">お問い合わせはこちら</h2>
                     <div class="shadow"><h3 class="font"><a href="https://thebase.in/inquiry/saunamafia-official-ec">--&nbsp;&nbsp;お問い合わせフォーム&nbsp;&nbsp;--</a></h3></div>
@@ -194,6 +244,20 @@
             </main>
             <footer>
                 <div id="foot" class="inner">
+                    
+
+<div class="text">
+    <p class="footanime">Totonoi is</p>
+    <p>
+      <span class="word wisteria">sauna.</span>
+      <span class="word belize">mizuburo.</span>
+      <span class="word pomegranate">gaikiyoku.</span>
+      <span class="word green">samesi.</span>
+      <span class="word midnight">trance.</span>
+    </p>
+  </div>
+  
+  
                     <ul class="follow-me">
                         <li><a href="https://twitter.com"></a></li>
                         <li><a href="https://www.facebook.com">
@@ -203,11 +267,14 @@
 
             </footer>
         </div>
+        <script src="./js/loading.js"></script>
         <script src="./js/fuwa.js"></script>
         <script src="./js/hum.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/form.js"></script>
         <script src="./js/slideresp.js"></script>
+        <script src="./js/texanime.js"></script>
+
         
     </body>
 </html>

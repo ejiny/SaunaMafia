@@ -12,7 +12,7 @@ html{
     margin: 0 auto;
 }
 
-#top,.swiper-container{
+#top,.swiper-container,.rentalimg{
     margin-top: 1%;
     max-width: 100%;
     background-size: cover;
@@ -83,17 +83,25 @@ ul{
 }
 
 .topsimg{
-    background-image: url(../img/paka.png);
+    background-image: url(../img/pakaimgfix.jpg);
+  
+    
 
 }
 .shirtimg{
-    background-image: url(../img/tshits.png);
+    background-image: url(../img/shirtsimgfix.jpg);
+  
+    
 }
 .itemimg{
     background-image: url(../img/taoru.png);
+   
+    
 }
 .hatimg{
-    background-image: url(../img/hatimg.png);
+    background-image: url(../img/hatkari.jpg);
+   
+    
 
 }
 .flex{
@@ -108,6 +116,7 @@ ul{
     position: relative;
     display:flex;
     width: 30vw;
+   
     
 }
 .hatimg{
@@ -170,10 +179,10 @@ a:hover { color: #acabec; }/*ポイント時のリンク*/
 a:active { color: #f8f5f2; } /*選択中のリンク*/
 
 .inner{
-    padding-top: 5vw;
+    padding-top: 30vw;
     
 }
-#about h2{
+#about h3{
     font-size: 67%;
     width: 80%;
     margin: 0 auto;
@@ -296,7 +305,8 @@ a:active { color: #f8f5f2; } /*選択中のリンク*/
   
 .font,#news h2,#news h3,#news h4,#news h5,
 #plan h2,#plan h3,#plan h4,#plan h5,
-#rental h2,#rental h3,#rental h4,#rental h5{
+#rental h2,#rental h3,#rental h4,#rental h5
+#about h1,#about h2,#about h3,#about h4{
     font-family: 'Shippori Mincho B1', serif;
 }
 #contact a{
@@ -341,4 +351,68 @@ a:active { color: #f8f5f2; } /*選択中のリンク*/
 }
 #aboutimg{
     margin-bottom: 0;
+}
+#about h2{
+    border-bottom: 2px solid gray;
+    display: block;
+
+    width: 30vw;
+    margin: 0 auto 3vw;
+}
+#about h2 strong{
+    font-size: 3vw;
+}
+#about h3{
+    font-size: 1.3vw;
+    line-height: 3vw;
+    text-align: start;
+    margin-left: 23vw;
+}
+#about h3 strong{
+    font-size: 1.5vw;
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+.brmb{
+    display: none;
+}
+.aboutst{
+    text-align: center;
+}
+.rentalbox{
+    height: 60vw;
+}
+
+.rentalimg{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    
+    
+    
+    
+}
+.hatimg{
+    background-size: contain;
+    margin-bottom: 50px;
+}
+.imgbox{
+    position: relative;
+}
+.imgbox h2{
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    
+}
+.rentaltext{
+    text-align: start;
+    font-size: 80%;
+    line-height: 200%;
+    margin: 0 0 10vw 3vw;
+    
+}
+#rental a{
+    display: block;
+    width: 35vw;
+    margin: 0 auto;
 }

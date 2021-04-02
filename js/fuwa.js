@@ -4,7 +4,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
  $('.scroll-fade').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 200){
+  if(topWindow > targetPosition - windowHeight + 300){
    $(this).addClass("fadeInDown");
   }
  });

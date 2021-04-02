@@ -24,6 +24,33 @@
 .banamb{
     display: none;
 }
+
+
+
+  .row{
+      display: -ms-grid;
+      -ms-grid-columns: min-content;
+  }
+  .slide{
+      margin-right: 1.5%;
+  }
+  .autoplay-slider {
+    display: flex;
+    min-width: 100%;
+    width: min-content;
+    animation: 30s linear infinite sliderAnimation;
+  }
+  
+  
+  @keyframes sliderAnimation {
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+
+
 @media screen and (max-width: 767px) {
     .banapc{
         display: none;

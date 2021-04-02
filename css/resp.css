@@ -1,5 +1,8 @@
 @media screen and (max-width: 767px) {
-
+    .loadimg{
+        width: 70vw;
+ 
+    }
 #head nav{
     display: none;
 }
@@ -98,7 +101,31 @@ form{
     height: 100%;
 
 }
+#about h2{
+    
 
+   width: 70vw;
+    margin: 0 auto 3vw;
+}
+#about h2 strong{
+    font-size: 4vw;
+}
+#about h3{
+    font-size: 2.7vw;
+    line-height: 4vw;
+    text-align: start;
+    margin-left: 15vw;
+}
+#about h3 strong{
+    font-size: 3vw;
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+.brpc{
+    display: none;
+}
+.brmb{
+    display: block;
+}
 
 
 
