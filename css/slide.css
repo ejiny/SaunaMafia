@@ -1,0 +1,35 @@
+.banapc{
+    display: flex;
+    width:100%;
+    flex-direction: column; /* 変更なし */
+    justify-content: center; /* 変更なし */
+    align-items: center; /* 変更なし */
+    
+    
+
+    
+}
+.swiper-slide{
+    display: flex;
+    margin: 0 auto;
+    width:100%;
+    flex-direction: column; /* 変更なし */
+    justify-content: center; /* 変更なし */
+    align-items: center; /* 変更なし */
+    
+}
+.swiper-container,.swiper-wrapper{
+    width:100%;
+}
+.banamb{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .banapc{
+        display: none;
+    }
+    .banamb{
+        display: flex;
+        height: 80vw;
+    }
+}

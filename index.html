@@ -2,8 +2,13 @@
 <html>
     <head>
         <title>サウナマフィア | SaunaMafia</title>
+        <meta name="google-site-verification" content="cIhVlIuZ7dE5xisnIY0BLEy9ucqrRODYYFoZTrQMsTQ" />
         <meta charset="UTF-8">
-        <meta name="description" content="サウナグッズ販売、北海道でサウナテントを借りるならサウナマフィア!新しいサウナブランドを展開">
+        <meta name="description" content="北海道でサウナテントを借りるならサウナマフィア!サウナグッズ販売、新しいサウナブランドを展開">
+        <meta property="og:title" content="サウナマフィア | SaunaMafia"/>
+        <meta property="og:description" content="北海道でサウナテントを借りるならサウナマフィア!サウナグッズ販売、新しいサウナブランドを展開" />
+        <meta property="og:url" content="http://saunamafia.club" />
+        <meta property="og:image" content="http://saunamafia.club/img/bana3.png" />
         <meta name="keywords" content="北海道,札幌,サウナ,レンタル,テント,テントサウナ,サウナハット,サウナマット,サウナブランド,Tシャツ,ロンT,パーカー,ファッション,アパレル,サウナグッズ">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
@@ -12,12 +17,15 @@
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
         <link rel="stylesheet" href="./css/hum.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <link rel="stylesheet" href="./css/resp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/slide.css">
+        <link rel="stylesheet" href="./css/resp.css">
 
     </head>
     <body id="body">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
         <div id="wrapper">
             <header>
                 <div class="custom-header">
@@ -59,7 +67,28 @@
             <main>
                 <div  class="innertop"></div>
                 <div id="top">
-                    <img src="./img/logo.png" id="toplogo">
+                    <!-- Swiper START -->
+                <div class="swiper-container">
+                    <!-- メイン表示部分 -->
+                    <div class="swiper-wrapper">
+                        <!-- 各スライド -->
+                        <div class="swiper-slide">
+                            <img class="banapc" src="./img/bana1.png">
+                            <img class="banamb" src="./img/banares1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="banapc" src="./img/bana2.png">
+                            <img class="banamb" src="./img/banares2.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="banapc" src="./img/bana3.png">
+                            <img class="banamb" src="./img/banares3.png">
+                        </div>    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!--<a href="https://jp.freepik.com/photos">Gpointstudio - jp.freepik.com によって作成された写真</a>-->
+                   
+                </div>
                 </div>
                 
                 
@@ -134,11 +163,17 @@
                 <div class="scroll-fade">
                     <section id="about" class="inner">
                         <h1 class="catetitle">about</h1>
-                        <h2 class="font">SaunaMafiaは新しいサウナブランドを目指し北海道から発信しております。<br>
-                            アウトドアでサウナを楽しめるサウナテントのレンタルを試験的に運用しております。
-                            お手頃価格な価格で選びやすいショップ運営を目指すので、どうぞご贔屓ください。
+                        <h2 class="font">Sauna Mafia （サウナマフィア）<br>
+                            Sauna好きの人（サウナー）は、サウナを愛し優しい印象の方が多いと思います。<br>
+                            そこに私達はMafiaを社会的にマイナスなイメージではなく、家族愛、仲間意識と捉えて、<br>
+                            気軽に北海道の大自然溢れるロケーションなどでテントサウナを仲間や友人、家族と<br>
+                            一緒に楽しんでほしいということから、「SaunaMafia」と命名しました。<br>
+                            <br>
+                            アウトドアでサウナを楽しめるサウナテントのレンタルを試験的に運用しております。<br>
+                            お手頃価格な価格で選びやすい運営を目指すので、どうぞご贔屓ください。<br>
                         </h2>
-                        <img src="./img/estonia-3350235_1920.jpg" id="aboutimg">
+                        <img src="./img/aboutimg.jpg" id="aboutimg"><br>
+                        <!--<a href="https://jp.freepik.com/photos/woman">Gpointstudio - jp.freepik.com によって作成された写真</a>-->
                         <br>
                  
                     </section>
@@ -172,6 +207,7 @@
         <script src="./js/hum.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/form.js"></script>
+        <script src="./js/slideresp.js"></script>
         
     </body>
 </html>
